@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ChatWidget from "../ChatWidget";
 
 const products = [
   { id: 1, name: "Stylish Jacket", image: "/Images/download (2).jpeg", price: "$49" },
@@ -167,6 +168,7 @@ const EcommerceLandingPage = () => {
     
     
     </div>
+    {/* <ChatWidget/> */}
     </Box>
   );
 };

@@ -1,0 +1,132 @@
+/* components/ChatWidget.module.css */
+.chatWidget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transform: translateY(calc(100% - 50px));
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.chatWidget.open {
+  transform: translateY(0);
+}
+
+.chatHeader {
+  background: #3f51b5;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatHeader h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.chatContainer {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+  max-width: 80%;
+}
+
+.message.user {
+  margin-left: auto;
+}
+
+.message.bot {
+  margin-right: auto;
+}
+
+.messageContent {
+  padding: 10px 15px;
+  border-radius: 18px;
+}
+
+.message.user .messageContent {
+  background: #3f51b5;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.message.bot .messageContent {
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+}
+
+.messageTime {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.products {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.products h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+}
+
+.products ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.products li {
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+.chatInput {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chatInput button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chatInput button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
