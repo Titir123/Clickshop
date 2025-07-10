@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     // Forward the request to your n8n webhook
-    const n8nResponse = await fetch('https://suchishree0111.app.n8n.cloud/webhook/a6805d25-aac8-4e21-bf3d-b5d581e952e0/chat', {
+    const n8nResponse = await fetch('http://localhost:5678/webhook/a6805d25-aac8-4e21-bf3d-b5d581e952e0/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
