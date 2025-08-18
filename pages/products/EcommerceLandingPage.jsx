@@ -168,7 +168,7 @@ const EcommerceLandingPage = () => {
     
     
     </div>
-    {/* <ChatWidget/> */}
+    <ChatWidget/>
     </Box>
   );
 };
