@@ -34,7 +34,7 @@ const ChatWidget = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch('http://localhost:5678/webhook/a6805d25-aac8-4e21-bf3d-b5d581e952e0/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
